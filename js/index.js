@@ -20,6 +20,11 @@ Array.from(text).forEach((paragraph) => {
     paragraph.addEventListener("pointerleave", (event) => {
       event.target.style.border = "dotted white thin";
     });
+    Array.from(text).forEach((paragraph) => {
+      paragraph.addEventListener("keypress", (event) => {
+        event.target.style.backgroundColor = "gray";
+      });
+    });
   });
 });
 
